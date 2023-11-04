@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Space tourism website</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="destination.css">
+  
+</head>
+<body>
+  <div class="flex  ">
+    <button class=" m-5 "><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg></button>
+
+    <button id="Open" class="  m-5 ml-auto "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg></button>
+
+    
+  </div>
+    <nav class="float-right h-screen  w-2/3 container hidden fixed mt-0 top-0 right-0  " id="nav">
+        
+        <button id="Close" class=" float-right mt-7 mr-5 hidden"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg></button>
+
+        <div class="   mt-32 h-max ml-3 mr-3" id="nav1">
+            <a href="index.html" class="pt-5 pl-3 text-white hover:border-b-2 hover:border-white hover:border-solid"><strong> 00 </strong>  Home</a>
+            <a href="destination.html" class="pt-5 pl-3 text-white border-b-2 border-white border-solid"> <strong> 01 </strong> Destination</a>
+            <a href="crew.html" class="pt-5 pl-3 text-white hover:border-b-2 hover:border-white hover:border-solid"> <strong> 02 </strong>  Crew</a>
+            <a href="technology.html" class="pt-5  pl-3 text-white hover:border-b-2 hover:border-white hover:border-solid">  <strong> 03 </strong>  Technology</a>
+        </div>
+
+    </nav>
+
+
+    
+    <div class="" id="kolchi">
+      <div id="nisf">
+    <p class="text-white  para "><span class="text-gray-400"><strong>01 </strong></span> PICK YOUR DESTINATION</p>
+    <div class="image-container ">
+      <img src="./assets/destination/image-moon.png" alt="Moon" >
+    </div>
+  </div>
+   <main id="main">
+    <div class="w-full h-10  flex justify-center mt-8" id="kra">
+      <button class="text-white text-center border-b-2 border-solid border-white " id="MOON">MOON</button>
+      <button class="text-white  text-center" id="MARS">MARS</button>
+      <button class="text-white  text-center" id="EUROPA">EUROPA</button>
+      <button class="text-white  text-center" id="TITAN">TITAN</button>
+    </div>
+    
+    <p class="text-white   text-center text-6xl" id="nameplanet">MOON</p>
+
+    <p class="text-white" id="textplanet">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+      
+    <hr id="hr">
+      <div id="divv">
+          <div id="first">
+        <p class="text-center text-white " id="Avg">AVG. DISTANCE</p>
+        <p class="text-center text-white" id="avgnum">384,400 KM</p>
+        </div>
+        <div id="second">
+        <p class="text-center text-white" id="est">EST. TRAVEL TIME</p>
+        <p class="text-center text-white" id="estday">3 DAYS</p>
+      </div>
+    </div>
+
+  </main>
+
+</div>
+  <script src="destination.js"></script>
+</body>
+</html>

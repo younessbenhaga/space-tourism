@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.large-button {
+    z-index: 1;
+}
+
+.large-button::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 12.3rem;
+    height: 12.3rem;
+    background: hsl( 0 0% 100% / .1);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 500ms linear, transform 750ms ease-in-out;
+}
+.large-button:hover::after {
+    opacity: 1;
+    transform: scale(1.5);
+}
+body{
+  background-image: url('./assets/home/background-home-mobile.jpg');
+  background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+nav{
+  background: hsl( 0 0% 100% / 0.05); 
+  backdrop-filter: blur(1.5rem);
+  font-family: 'Kay Pho Du', serif;
+}
+#content{
+    
+    text-align: center;
+
+  }
+  #large-button a{
+    padding: 0px;
+}
+#nav1 a{
+    
+    display: block;
+    margin-top: 5px;
+    
+}
+
+@media (min-width: 380px) {
+    body{
+        background-image: url('./assets/home/background-home-tablet.jpg');
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+  
+}
+@media (min-width: 434px) { 
+    body{
+        background-image: url('./assets/home/background-home-tablet.jpg');
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+    #Open{
+        display: none;
+    }
+    #Close{
+        display: none;
+    }
+    #nav {
+        display: inline-block;
+        width: max-content;
+        height: max-content;
+        margin-top: 18px;
+        background: hsl( 0 0% 100% / .1);
+        border-radius: 3px;
+
+    }
+
+    #nav1 {
+        margin-top: 0cm;
+        width: max-content;
+        height: 65px;
+        
+        display: grid;
+        grid-auto-flow: column; /* Display the paragraphs in a horizontal line */
+        align-items: center;
+        float: right;
+    
+    }
+    #nav1 a {
+    font-size:13px;
+    float: right;
+    
+    margin-right: 4px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+
+    }
+    #content{
+        margin-top: 6rem;
+        text-align: center;
+
+    }
+    #lot{
+        margin-top: 3rem;
+
+    }
+    #large-button a{
+        padding: 0px;
+    }
+ }
+ @media (min-width: 751px) {
+        body{
+            background-image: url('./assets/home/background-home-desktop.jpg');
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            
+            
+        }
+        #Open{
+            display: none;
+        }
+        #Close{
+            display: none;
+        }
+        #nav {
+            display: inline-block;
+            width: 670px;
+            height: max-content;
+            margin-top: 18px;
+            background: hsl( 0 0% 100% / .1);
+            border-radius: 3px;
+
+        }
+
+        #nav1 {
+            margin-top: 0cm;
+            width: max-content;
+            height: 65px;
+            display: grid;
+            grid-auto-flow: column; /* Display the paragraphs in a horizontal line */
+            align-items: center; 
+        
+        }
+        #nav1 a {
+        font-size:13px;
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        margin-left: 30px;
+        margin-right: 30px;
+
+        }
+        #content{
+            margin-top: 8rem;
+            float: left;
+            text-align:start;
+            
+            display: block;
+            height: max-content;
+            width: 40%;
+            padding: 0cm;
+            margin-left: 5%;
+
+
+        }
+        #content p{
+            width: 100%;
+            padding-top:10px;
+            margin: 0px;
+            
+            height: 80px;
+            padding-left: 1rem;
+        }
+
+        
+        #large-button{
+            margin-top: 130px;
+        }
+        #large-button a{
+            padding: 0px;
+        }
+
+  }
+  
+
+
